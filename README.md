@@ -9,7 +9,7 @@
 
 ## Abstract
 
-**DPS** is an educational proof-of-concept for **decentralized cryptographic processing** using TCP socket communication. The system encrypts a string with a custom pattern, splits it into two parts, sends each part to a remote worker node for decryption, and reconstructs the original message upon receiving both responses.
+The system encrypts a string with a custom pattern, splits it into two parts, sends each part to a remote worker node for decryption, and reconstructs the original message upon receiving both responses.
 
 This project demonstrates key concepts in:
 - Distributed systems
@@ -32,23 +32,6 @@ This project demonstrates key concepts in:
 | **TCP Sockets**     | Communication channel between server and nodes |
 | **Result Array**    | Ordered collection buffer for reassembly |
 
-### Operational Workflow
-
-```mermaid
-graph TD
-    A[Input String] --> B[Encrypt with Custom Pattern]
-    B --> C[Split into 2 Parts]
-    C --> D[Send Part 1 → Node 1]
-    C --> E[Send Part 2 → Node 2]
-    D --> F[Node 1: Decrypt]
-    E --> G[Node 2: Decrypt]
-    F --> H[Return → array[0]]
-    G --> I[Return → array[1]]
-    H & I --> J[Array Full?]
-    J -->|Yes| K[Concatenate → Original Message]
-```
-
----
 
 ## Design Strengths
 
