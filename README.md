@@ -2,8 +2,6 @@
 **Distributed Encrypted String Decryption via Worker Nodes**
 
 [![GitHub](https://img.shields.io/badge/GitHub-shimodii%2FuniNetwork-blue?logo=github)](https://github.com/shimodii/uniNetwork/tree/main/dp)  
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)  
-![Status: Proof of Concept](https://img.shields.io/badge/status-proof%20of%20concept-orange)
 
 ---
 
